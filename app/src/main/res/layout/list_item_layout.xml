@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/global_padding"
+    android:background="@drawable/event_list_bg"
+    android:layout_margin="15dp">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/thumbnail"
+        android:layout_marginRight="@dimen/global_padding"
+        android:id="@+id/event_image" />
+
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:ellipsize="end"
+        android:layout_toRightOf="@+id/event_image"
+        android:layout_toEndOf="@+id/event_image"
+        android:id="@+id/eventName" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/right_arrow"
+        android:layout_alignBottom="@+id/eventName"
+        android:layout_alignRight="@+id/view3"
+        android:layout_alignEnd="@+id/view3"
+        android:layout_marginRight="20dp"
+        android:id="@+id/expand" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/grey"
+        android:layout_marginTop="@dimen/global_padding"
+        android:layout_below="@+id/event_image"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/view3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="#ABABAB"
+        android:layout_below="@+id/view3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/view3"
+        android:layout_alignStart="@+id/view3"
+        android:id="@+id/eventCat" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/star"
+
+        android:layout_alignTop="@+id/eventCat"
+        android:layout_alignLeft="@+id/expand"
+        android:layout_alignStart="@+id/expand" />
+
+
+
+</RelativeLayout>
